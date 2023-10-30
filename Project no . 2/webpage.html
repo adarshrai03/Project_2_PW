@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <title>Webpage Clone</title>
+</head>
+<style>
+    * {
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .container {
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        background-image: url('/Assets/background-image.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    .navbar {
+        display: flex;
+        height: 70px;
+        width: 100vw;
+        justify-content: space-between;
+
+    }
+
+    .item {
+        display: flex;
+        margin-top: 20px;
+        list-style-type: none;
+        column-gap: 40px;
+        padding: 5px;
+    }
+
+    .image1 {
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+
+    .right-item {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        right: 50px;
+        height: fit-content;
+        width: fit-content;
+        top: 15px;
+        right: 110px;
+        list-style-type: none;
+        column-gap: 10px;
+        
+    }
+
+    .b1 button{
+        color: white;
+        background-color: rgb(255, 46, 123);
+        padding: 9px; border: none; 
+        border-radius: 5px;
+        font-family: 'Playpen Sans', cursive;
+        
+    }
+
+
+
+
+    .image2 {
+        margin-top: 5px;
+    }
+
+    .right-img {
+        display: flex;
+        height: fit-content;
+        width: fit-content;
+        position: absolute;
+        right: 0px;
+        top: 50px;
+    }
+
+    .b2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 215px;
+        right: 115px;
+        padding: 10px;
+        border: none;
+        border-radius: 40px;
+        column-gap: 12px;
+        box-shadow: 1px 4px 10px rgb(31, 0, 22);
+        width: 150px;
+        font-family: 'Playpen Sans', cursive;
+        font-family: 'Roboto Slab', serif;
+    }
+
+    .b3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 125px;
+        right: 685px;
+        padding: 10px;
+        border: none;
+        border-radius: 40px;
+        column-gap: 12px;
+        box-shadow: 1px 4px 10px rgb(31, 0, 22);
+        width: 150px;
+        font-family: 'Playpen Sans', cursive;
+        font-family: 'Roboto Slab', serif;
+    }
+
+    .left-portion {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 250px;
+        left: 90px;
+        height: fit-content;
+        width: 390px;
+    }
+
+    .left-portion h1 {
+        font-size: 3.5em;
+    }
+
+    .left-portion h2 {
+        padding-top: 12px;
+        color: rgb(95, 95, 95);
+    }
+
+    .left-portion>.b4 {
+        display: flex;
+        column-gap: 20px;
+        margin-top: 20px;
+    }
+
+    .left-portion button {
+        padding: 13px;
+        background-color: rgb(255, 46, 123);
+        border: none;
+        border-radius: 7px;
+        width: 180px;
+    }
+
+    .b4>.apply-btn {
+        width: 140px;
+        color: white;
+        font-family: 'Playpen Sans', cursive;
+    }
+
+    .b4>.calc-btn {
+        width: 200px;
+        background-color: white;
+        color: rgb(255, 46, 123);
+        border: 1px solid rgb(255, 46, 123);
+        font-family: 'Playpen Sans', cursive;
+    }
+
+    .icon {
+        display: flex;
+        position: absolute;
+        list-style-type: none;
+        column-gap: 20px;
+        bottom: 40px;
+        left: 90px;
+        padding: 5px;
+    }
+
+    .icon li:first-child {
+        font-size: 1.4em;
+    }
+
+/* ------HOVER-------*/
+
+    button:hover{
+        cursor: pointer;
+        background-color: white;
+        color: rgb(255, 46, 123);
+        border: 1px solid rgb(255, 46, 123);
+    }
+    .apply-btn:hover{
+        color: rgb(255, 46, 123) ;
+        box-shadow: .5px .5px 4px rgb(100, 0, 0);
+    }
+    .calc-btn:hover{
+        color: white;
+        background-color: rgb(255, 46, 123);
+        box-shadow: .5px .5px 4px rgb(100, 0, 0);
+    }
+
+    .item li:hover{
+        cursor: pointer;
+        text-shadow: 1px 1px 10px rgb(73, 0, 39);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="image1"><img src="/Assets/website-logo.png" alt="logo.img"></div>
+            <div class="item">
+                <li>RETAIL</li>
+                <li>SME</li>
+                <li>CORPORATE</li>
+                <li>ABOUT US</li>
+                <li>COVID-19</li>
+                <li>CAMPGAINS</li>
+            </div>
+            <div class="right-item">
+                <div class="image2"><img src="/Assets/search-icon.png" alt="search.logo"></div>
+                <div class="b1"><button class="b1">iServices</button></div>
+            </div>
+        </div>
+
+
+        <div class="right-img">
+            <img src="/Assets/hero-image.png" alt="hero.img">
+        </div>
+
+
+        <button class="b2">
+            <img src="/Assets/House.png" alt="house.logo">
+            Home Loan
+        </button>
+
+        <button class="b3">
+            <img src="/Assets/car.png" alt="car.logo">
+            Car Loan
+        </button>
+
+
+        <div class="left-portion">
+            <h1>Chase Your Dream with Us</h1>
+            <h2>The harder you work for something , the greater you will fell when you achieve it</h2>
+            <div class="b4">
+                <button class="apply-btn">APPLY COURSE</button>
+                <button class="calc-btn">LOAN CALCULATOR</button>
+            </div>
+        </div>
+
+        <div class="icon">
+            <li><img src="/Assets/phone.png" alt="ph.logo">1659</li>
+            <li><img src="/Assets/facebook.png" alt="fb.logo"></li>
+            <li><img src="/Assets/linkedin.png" alt="li.logo"></li>
+            <li><img src="/Assets/youtube.png" alt="yt.logo"></li>
+            <li><img src="/Assets/instagram.png" alt="ig.logo"></li>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
